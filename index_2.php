@@ -9,7 +9,6 @@ $error = isset($_GET['error']) && ! empty($_GET['error']) ? $_GET['error'] : nul
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>PM Coffee Chat - Connect with your peers monthly</title>
-    <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +30,6 @@ $error = isset($_GET['error']) && ! empty($_GET['error']) ? $_GET['error'] : nul
       .footer, .hero .title,.hero .subtitle, strong{color:#F3F3F8;}
       .title{font-family:Moranga;}
       .signup-form .title{color:#02055C;}
-
     </style>
     <script>
       function validateForm() {
@@ -53,27 +51,15 @@ $error = isset($_GET['error']) && ! empty($_GET['error']) ? $_GET['error'] : nul
     </script>
   </head>
 <body>
-
-  <!--section class="hero">
-    <div class="container">
-      <div class="hero-body columns is-centered">
-        <img src="PMCoffeeChat_Logo.png" alt="Connecting Product Managers around the world" width="250">
-      </div>
-    </div>
-  </section-->
-
+  <p class="success">
+  </p>
 <section class="hero is-medium">
   <div class="container">
-    <div class="columns is-vcentered is-centered">
-      <div class="column is-one-quarter">
-        <img src="humans.png" alt="A woman and a man talking over videoconference.">
-      </div>
-      <div class="hero-body column is-half">
-        <p class="title test is-1"><img src="PMCoffeeChat_Logo.png" alt="Connecting Product Managers around the world" width="200"></p>
-        <p class="title test is-1">Find Product peers to exchange with</p>
-        <p class="subtitle is-4">Every month we pair you with another Product Manager for a 30min virtual coffee chat.</p>
-        <!--img src="humans.png" width="400px" alt="A woman and a man talking over videoconference"-->
-      </div>
+    <div class="hero-body column is-two-thirds">
+      <p class="title test is-1"><img src="PMCoffeeChat_Logo.png" alt="Connecting Product Managers around the world" width="200"></p>
+      <p class="title test is-1">Find Product peers to exchange with</p>
+      <p class="subtitle is-4">Every month we pair you with another Product Manager for a 30min virtual coffee chat.</p>
+      <!--img src="humans.png" width="400px" alt="A woman and a man talking over videoconference"-->
     </div>
   </div>
 </section>
@@ -87,7 +73,7 @@ $error = isset($_GET['error']) && ! empty($_GET['error']) ? $_GET['error'] : nul
 
       <div class="column is-half is-offset-one-quarter">
         <h2 class="title is-3">Join the conversation!</h2>
-        <p class="content">All fields are mandatory - this ensures that your match will have the information to contact you and know a bit about you ahead of the conversation.</p>
+        <p>To ensure that other members have information to contact you and learn about you, all fields are mandatory.</p>
         <form method="post" action="action.php" class="DBForm" name="Registration" onsubmit="return validateForm()">
 
             <div class="field">
@@ -144,12 +130,14 @@ $error = isset($_GET['error']) && ! empty($_GET['error']) ? $_GET['error'] : nul
                   I'm not a PM yet</label>
               </div>
             </div>
+
             <!--div class="field">
               <label class="label">Location</label>
               <div class="control">
                 <input class="input" type="text" name="location" placeholder="City, State/Province/Country" required>
               </div>
-            </div-->
+            </div>
+
             <div class="field">
               <label class="label">Timezone/GMT</label>
               <div class="control">
@@ -186,8 +174,8 @@ $error = isset($_GET['error']) && ! empty($_GET['error']) ? $_GET['error'] : nul
                   </select>
                 </div>
               </div>
-              <p class="help">To make it easier to plan over your availabilities.</p>
-            </div>
+              <p class="help">To facilitate your calendar with matches</p>
+            </div-->
 
             <div class="field">
               <div class="control">
